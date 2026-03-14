@@ -17,7 +17,7 @@ const Uppersection = () => {
 
   return (
     <div className='flex flex-col justify-between gap-2'>
-      <div className="h-[90vh] grid grid-cols-4 grid-rows-2 gap-4 p-4">
+      <div className="h-[90vh] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {images.map((data) => (
           <Card key={data.id} data={data} />
         ))}
