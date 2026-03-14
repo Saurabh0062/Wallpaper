@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card';
 
 const Uppersection = () => {
-  const [pageno, setpageno] = useState(0);
+  const [pageno, setpageno] = useState(Math.floor(Math.random() * 100));
   const [images, setimages] = useState([]);
 
   useEffect(() => {
